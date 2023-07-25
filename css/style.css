@@ -1,0 +1,55 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar
+{
+    padding-top: 0;
+}
+
+.container-fluid
+{
+    
+    /* background-color: #314396 !important; */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+#logo
+{
+    margin: 10px 0;
+    margin-right: 16px;
+
+}
+
+.navPage
+{
+    color: #ffffff !important;
+    font-size: 1.1em;
+}
+
+#searchBtn
+{
+    transition: 0.5s;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-right: 16px;
+}
+
+#collapseBtn
+{
+    width: 82px;
+    height: 32px;
+    border-radius: 8px;
+    background-color: #00284d;
+    color: white;
+}
+
+#searchBtn:hover
+{
+    color: white;
+    background-color: #00284d;
+    border-color: #80bfff;
+}
