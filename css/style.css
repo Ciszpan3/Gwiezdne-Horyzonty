@@ -2,11 +2,25 @@
 {
     margin: 0;
     padding: 0;
+   
 }
 
+body
+{
+    /* background-image: url(/img/tło.jpg); */
+    /* background: rgb(0,26,75);
+    background: linear-gradient(180deg, rgba(0,26,75,1) 0%, rgba(35,10,214,1) 100%, rgba(0,11,255,1) 100%); */
+    background-repeat: unset;
+    background: rgb(0,5,75);
+    background: linear-gradient(180deg, rgba(0,5,75,1) 0%, rgb(6, 2, 90) 100%, rgb(3, 9, 122) 100%);
+}
+
+/* Navbar style */
 .navbar
 {
     padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 1px solid #0d004b;
 }
 
 .container-fluid
@@ -17,19 +31,15 @@
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
 }
 
-#logo
-{
-    margin: 10px 0;
-    margin-right: 16px;
 
-}
-
+/* Element navbara */
 .navPage
 {
     color: #ffffff !important;
     font-size: 1.1em;
-    margin-top: 9.9px;
+    
 }
+
 
 #searchBtn
 {
@@ -37,8 +47,28 @@
     padding-right: 8px;
     padding-left: 8px;
     margin-right: 16px;
+    color: white;
 }
 
+#searchBtn:hover
+{
+    color: white;
+    background-color: #00284d;
+    border-color: #80bfff;
+}
+
+/* Logo  */
+#logo
+{
+    margin: 10px 0;
+    margin-right: 16px;
+
+}
+
+
+
+
+/* Przycisk menu rozwijanego */
 #collapseBtn
 {
     width: 82px;
@@ -48,9 +78,450 @@
     color: white;
 }
 
-#searchBtn:hover
+
+#slogan
 {
-    color: white;
-    background-color: #00284d;
-    border-color: #80bfff;
+    
+    font-family: 'Roboto', cursive;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+    position: absolute;
+    right: 340px;
+    top: 20px;
+    color: #ffffff;
+    text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    
+}
+
+#carousuel
+{
+    width: 75%;
+    margin: 0px auto;
+    border: 4px solid #0d004b;;
+    border-top: 0px;
+}
+
+
+.navbarDropdownElement
+{
+    background-color:  rgb(5, 1, 54);;
+    color: #ffffff;
+}
+
+#navbarDropdownUl
+{
+    border: 1px solid white;
+}
+
+
+.navbarDropdownElement:hover
+{
+    background-color:  rgba(5, 1, 54, 0.932);;  
+    color: #ffffff;
+    
+}
+
+.active
+{
+   background-color: #0c0263;
+   border-radius: 15px;
+}
+
+#sideNav
+{
+    position: absolute;
+    background-color: aqua;
+    width: 240px;
+}
+
+
+#sideNav > ul
+{
+    list-style: none;
+    line-height: 43px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sideNavElement
+{
+    text-decoration: none;
+    background-color:  rgb(5, 1, 54);
+    color: #ffffff;
+    padding: 12px;
+    width: 240px;
+    display: block;
+    border: 1px solid #0d004b;
+    font-family: 'Roboto';
+    font-size: 17px;
+}
+
+
+.sideNavElement:hover
+{
+    background-color:  rgba(5, 1, 54, 0.932);;  
+    color: #ffffff;
+}
+
+
+#newsletterForm
+{
+    border: 1px solid #ffffff;
+    position: fixed;
+    z-index: 2000;
+    top: 50%;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+    padding: 30px;
+    border-radius: 12px;
+}
+
+
+#declineBtn
+{
+    margin-left: 115px;
+}
+
+
+#reklamaPrawa
+{
+    position: absolute;
+    top: 150px;
+    right: 20px;
+   
+    z-index: 1000;
+    
+}
+
+
+.mainPageCards
+{
+    
+    width: 400px;
+    display: inline-block;
+    /* height: 500px; */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+    border:5px solid #03539e;
+    border-radius: 18px;
+    color: rgba(255, 255, 255, 0.808);
+    margin-top: 160px;
+    margin-left: 115px;
+}
+
+
+
+.card_link a
+{
+    font-family: 'Roboto';
+    color: #0a84f7 !important;
+}
+
+.card-btn
+{
+    display: block;
+    margin-left: auto !important; 
+    margin-right: auto !important; 
+    width: 200px;
+    border: 2px solid #0d004b;
+    border-radius: 8px;
+}
+
+
+#footer
+{
+    background-color: rgb(5, 1, 54) !important;
+}
+
+#dolnaCzescStopki
+{
+    background-color: rgb(2, 0, 29) !important;
+}
+
+.typing
+{
+    margin-bottom: 0px;
+    font-size: 16px;
+    
+    color: #27af05;
+    width: 100%;
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    
+}
+
+#text1
+{
+    animation:
+        typing 2s steps(27),
+        cursor.4s step-end infinite alternate;
+}
+
+#text2
+{
+    animation:
+        typing 2s steps(32),
+        cursor.4s step-end infinite alternate;
+}
+
+
+#text3
+{
+    animation:
+        typing 2s steps(33),
+        cursor.4s step-end infinite alternate;
+}
+
+
+#text4
+{
+    animation:
+        typing 2s steps(22),
+        cursor.4s step-end infinite alternate;
+}
+
+
+#text5
+{
+    animation:
+        typing 2s steps(35),
+        cursor.4s step-end infinite alternate;
+}
+
+
+@keyframes cursor {
+    50% {border-color: transparent;}
+}
+
+@keyframes typing {
+    from {width: 0;}
+}
+
+#turnOn
+{
+    left: 180px;
+    z-index: 500;
+    width: 100px;
+    position: absolute;
+    top:520px
+    
+    
+}
+
+#wrapper
+{
+    position: absolute;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    background-color: black;
+}
+
+/* MONITOR */
+
+#monitor
+{
+    right: 80px;
+    top: 72px;
+    position: absolute;
+    height: 950px;
+    width: 1550px;
+}
+
+#container
+{
+    margin-top: 50px !important;
+    margin-bottom: 100px !important;
+    border: 8px solid rgb(49, 49, 49);
+    width: 1800px;
+    margin-right: 20px;
+    margin-left: 390px;
+    background-color: rgb(49, 49, 49);
+}
+
+#ziemia-gif
+{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+#jowisz-gif
+{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+#mars-gif
+{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+#lewaStronaMonitora
+{
+    padding: 0;
+}
+
+
+#lewaStronaMonitora
+{
+    border-bottom: 8px solid rgb(49, 49, 49);;
+}
+
+#lewaStronaMonitora article
+{
+    
+    color: #40d41a;
+    text-align:justify;
+    line-height: 26px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 9px 20px;
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+}
+
+#lewaDolnaStronaMonitora
+{
+    
+    background-color: #000000;
+}
+
+#prawaStronaMonitora
+{
+    background-color: black;
+    border-left: 8px solid rgb(49, 49, 49);
+    border-bottom: 8px solid rgb(49, 49, 49);
+}
+
+#dolnaStronaMonitora
+{
+    background-color: rgb(0, 0, 0);
+    border-left: 8px solid rgb(49, 49, 49);
+}
+
+
+#dolArtykułu
+{
+    margin-top: 8px;
+}
+
+#monitorGif
+{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+
+#monitorInfo1
+{
+    height: 190px;
+    width: 320px;
+    position: absolute;
+    color: #40d41a;
+    z-index: 1000;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#monitorInfo2
+{
+    margin-left: 340px;
+    color: #40d41a;
+    z-index: 1000;
+    display: inline-block;
+}
+
+#przyciskMonitor1 button
+{
+    font-weight: bold;
+    color: #0565be;
+    background-color: #000000 !important;
+    border: 0;
+    z-index: 1100;
+    position: absolute;
+    right: 960px;
+    bottom: 180px;
+    
+}
+
+#przyciskMonitor2 button
+{
+    font-weight: bold;
+    color: #0565be;
+    background-color: #000000 !important;
+    border: 0;
+    z-index: 1000;
+    position: absolute;
+    right: 625px;
+    bottom: 180px;
+}
+
+
+#textMonitorInfo1
+{
+    animation:
+        typing 2s steps(35),
+        cursor.4s step-end infinite alternate;
+}
+
+#textMonitorInfo2
+{
+    animation:
+        typing 2s steps(35),
+        cursor.4s step-end infinite alternate;
+}
+
+#textMonitorInfo3
+{
+    animation:
+        typing 2s steps(35),
+        cursor.4s step-end infinite alternate;
+}
+
+#textMonitorInfo4
+{
+    animation:
+        typing 2s steps(35),
+        cursor.4s step-end infinite alternate;
+}
+
+#textMonitorInfo5
+{
+    animation:
+        typing 2s steps(35),
+        cursor.4s step-end infinite alternate;
+}
+
+#textMonitorInfo6
+{
+    animation:
+        typing 2s steps(35),
+        cursor.4s step-end infinite alternate;
+}
+
+#textMonitorInfo7
+{
+    animation:
+        typing 2s steps(35),
+        cursor.4s step-end infinite alternate;
+}
+
+#textMonitorInfo8
+{
+    animation:
+        typing 2s steps(35),
+        cursor.4s step-end infinite alternate;
 }

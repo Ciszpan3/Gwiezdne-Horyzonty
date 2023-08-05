@@ -1,80 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Gwiezdne Horyzonty</title>
-    <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <!-- Google Fonts Roboto -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-    />
-    <!-- MDB -->
-    <link rel="stylesheet" href="css/mdb.min.css" />
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <!-- Start your project here-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <button
-          id="collapseBtn"
-          class="navbar-expand{sm} d-block d-lg-none"
-          type="button"
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarTogglerDemo03"
-          aria-controls="navbarTogglerDemo03"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-        <a class="navbar-brand" href="index.html"><img id="logo" style="width: 148px; " src="img/logo2.png" alt="logo strony"></a>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link navPage active me-3" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link navPage me-3" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link navPage me-3" href="#">Example</a
-              >
-            </li>
-          </ul>
-          <form class="d-flex input-group w-auto">
-            <input
-              type="search"
-              class="form-control"
-              placeholder="Czego szukasz?"
-              aria-label="Search"
-            />
-            <button
-              id="searchBtn"
-              class="btn btn-outline-primary"
-              type="button"
-              data-mdb-ripple-color="dark"
-            >
-              Wyszukaj
-            </button>
-          </form>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Gwiezdne Horyzonty</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/ikona.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- Google Fonts Tekrur -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet"> -->
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <!-- Start your project here-->
+
+  <!--NAVBAR - START-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <!-- PRZYCISK ROZWIJANIA MENU -->
+      <button id="collapseBtn" class="navbar-expand{sm} d-block d-lg-none" type="button" data-mdb-toggle="collapse"
+        data-mdb-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- /PRZYCISK ROZWIJANIA MENU -->
+
+      <a class="navbar-brand" href="index.html"><img id="logo" style="width: 148px; " src="img/logo2.png"
+          alt="logo strony"></a>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <!-- LISTA ELEMENTÓW NAVBARU -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link navPage active" aria-current="page" href="#">Główna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navPage" href="#">Link</a>
+          </li>
+          <!-- ROZWIJANY ELEMENT NAVBARU -->
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle navPage" href="#" id="navbarDropdownMenuLink" role="button"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              Planety
+            </a>
+            <ul id="navbarDropdownUl" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item navbarDropdownElement" href="#">Merkury</a>
+              </li>
+              <li>
+                <a class="dropdown-item navbarDropdownElement" href="#">Wenus</a>
+              </li>
+              <li>
+                <a class="dropdown-item navbarDropdownElement" href="ziemia.html">Ziemia</a>
+              </li>
+              <li>
+                <a class="dropdown-item navbarDropdownElement" href="mars.html">Mars</a>
+              </li>
+              <li>
+                <a class="dropdown-item navbarDropdownElement" href="jowisz.html">Jowisz</a>
+              </li>
+              <li>
+                <a class="dropdown-item navbarDropdownElement" href="#">Saturn</a>
+              </li>
+              <li>
+                <a class="dropdown-item navbarDropdownElement" href="#">Uran</a>
+              </li>
+              <li>
+                <a class="dropdown-item navbarDropdownElement" href="#">Neptun</a>
+              </li>
+            </ul>
+          </li>
+          <!-- /ROZWIJANY ELEMENT NAVBARU -->
+
+          <!-- ROZWIJANY ELEMENT NAVBARU - MENU BOCZNE-->
+          <li class="nav-item dropdown  d-lg-none">
+            <a class="nav-link dropdown-toggle navPage" href="#" id="navbarDropdownMenuLink" role="button"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              Menu boczne
+            </a>
+            <!-- ROZWIJANE MENU BOCZNE -->
+
+            <ul id="navbarDropdownUl" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item navbarDropdownElement " href="#" class="sideNavElement ">Opcja 1</a>
+              </li>
+              <li>
+                <a class="dropdown-item navbarDropdownElement " href="#" class="sideNavElement ">Opcja 2</a>
+              </li>
+              <li>
+                <a class="dropdown-item navbarDropdownElement " href="#" class="sideNavElement ">Opcja 3</a>
+              </li>
+              <li>
+                <a class="dropdown-item navbarDropdownElement " href="#" class="sideNavElement ">Opcja 4</a>
+              </li>
+              <li>
+                <a class="dropdown-item navbarDropdownElement newsletter" href="#"
+                  class="sideNavElement ">Newsletter</a>
+              </li>
+            </ul>
+
+            <!-- /ROZWIJANE MENU BOCZNE -->
+            <!-- /ROZWIJANY ELEMENT NAVBARU - MENU BOCZNE-->
+
+          <li class="nav-item">
+            <a class="nav-link navPage" href="#">Example</a>
+          </li>
+          <!-- SLOGAN - NA RAZIE WYłĄCZONY -->
+          <li>
+            <span id="slogan" class="d-none ">
+              &NonBreakingSpace; &NonBreakingSpace; &NonBreakingSpace; &NonBreakingSpace; Otwórz swój umysł na
+              nieskończoność <br>Gwiezdne Horyzonty: Odkryjemy Kosmos Razem!
+            </span>
+          </li>
+          <!-- /SLOGAN - NA RAZIE WYłĄCZONY -->
+        </ul>
+        <!-- /LISTA ELEMENTÓW NAVBARU -->
+
+        <!-- SEKCJA WYSZUKIWANIA -->
+        <form id="searcher" class="d-flex input-group w-auto mb-3 mb-lg-0">
+          <input type="search" class="form-control" placeholder="Czego szukasz?" aria-label="Search" />
+          <button id="searchBtn" class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
+            Wyszukaj
+          </button>
+          <!-- /SEKCJA WYSZUKIWANIA -->
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- NAVBAR - END -->
+
+  <!-- MENU BOCZNE -->
+  <div class="d-none d-lg-inline-block " id="sideNav">
+    <ul>
+      <li>
+        <a href="#" class="sideNavElement ripple">Opcja 1</a>
+      </li>
+      <li>
+        <a href="#" class="sideNavElement ripple">Opcja 2</a>
+      </li>
+      <li>
+        <a href="#" class="sideNavElement ripple">Opcja 3</a>
+      </li>
+      <li>
+        <a href="#" class="sideNavElement ripple">Opcja 4</a>
+      </li>
+      <li>
+        <a href="#" class="sideNavElement newsletter ripple">Newsletter</a>
+      </li>
+    </ul>
+
+  </div>
+  <!-- /MENU BOCZNE -->
+
+  <form id="newsletterForm" class="d-none">
+    <!-- Name input -->
+    <div class="form-outline mb-4">
+      <input type="text" id="inputName" class="form-control" style="color: #fff;" />
+      <label class="form-label" style="color: #ffffffb4;" for="inputName">Imię</label>
+    </div>
+
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      <input type="email" id="inputEmail" class="form-control" style="color: #fff;" />
+      <label class="form-label" style="color: #ffffffb4;" for="inputEmail">Adres e-mail</label>
+    </div>
+
+    <!-- Checkbox -->
+    <div class="form-check d-flex justify-content-center mb-4">
+      <input class="form-check-input " type="checkbox" value="" id="checkBoxTerms" />
+      <label class="form-check-label" for="checkBoxTerms">
+        Przeczytałem i zgadzam się na regulamin
+      </label>
+    </div>
+
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block mb-4">ZASUBSKRYBUJ</button>
+    <!-- Decline Button -->
+    <button id="declineBtn" type="button" class="btn btn-danger btn-rounded mb-0">Anuluj</button>
+  </form>
+
+
+  <!-- Carousel wrapper -->
+  <div id="carousuel" class="carousel slide carousel-fade " data-mdb-ride="carousel">
+    <!-- Dolne wskaźniki -->
+    <div class="carousel-indicators">
+      <button type="button" data-mdb-target="#carousuel" data-mdb-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-mdb-target="#carousuel" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-mdb-target="#carousuel" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Wnętrze -->
+    <div class="carousel-inner">
+      <!-- Pojedyńczy element -->
+      <div class="carousel-item active">
+        <!-- https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp -->
+        <img src="img/Planety/Ziemia.png" class="d-block w-100 " alt="Sunset Over the City" />
+        <div class="carousel-caption d-none d-lg-block">
+          <h5>Ziemia</h5>
+          <p>Jedyna planeta jaką znamy na której istnieje życie.</p>
         </div>
       </div>
-    </nav>
-    <!-- End your project here-->
 
-    <!-- MDB -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Custom scripts -->
-    <script type="text/javascript" src="js/script.js"></script>
-  </body>
+      <!-- Pojedyńczy element -->
+      <div class="carousel-item">
+        <!-- https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp -->
+        <img src="img/Planety/mars-1326108_1280.jpg" class="d-block w-100" alt="Canyon at Nigh" />
+        <div class="carousel-caption d-none d-lg-block">
+          <h5>Mars</h5>
+          <p>Mars. Czy go skolonizujemy?</p>
+        </div>
+      </div>
+
+      <!-- Pojedyńczy element -->
+      <div class="carousel-item">
+        <!-- https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp -->
+        <img src="img/Planety/jowisz.png" class="d-block w-100" alt="Cliff Above a Stormy Sea" />
+        <div class="carousel-caption d-none d-lg-block">
+          <h5>Jowisz</h5>
+          <p>Największa planeta układu słonecznego.</p>
+        </div>
+      </div>
+    </div>
+    <!-- /Wnętrze -->
+
+    <!-- Kontrolki P/L -->
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carousuel" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carousuel" data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- REKLAMA -->
+  <div id="reklamaPrawa">
+    <img src="img/reklama1.png" alt="reklama" class="img-fluid d-none d-xxl-block">
+  </div>
+  <!-- /REKLAMA -->
+
+
+
+  <!-- PIERWSZA KARTA -->
+  <div id="mainPageCard_1" class="card mainPageCards  w-25 h-auto">
+    <div class="bg-image hover-overlay" data-mdb-ripple-color="light">
+      <img src="img/ziemia-artykuł.png" class="img-fluid" />
+     
+    </div>
+    <div class="card-body ">
+      <h5 class="card-title">Nasza planeta - Ziemia</h5>
+      <p class="card-text">Zanurz się w fascynującym świecie nauki i odkrywaj tajemnice naszej planety Ziemi. 
+        Artykuł pełen ciekawostek i informacji naukowych, które oczarują i zaskoczą czytelników.</p>
+        <span class="card_link"><a href="ziemia.html">PRZEJDŹ DO ARTYKUŁU</a></span>
+    </div>
+  </div>
+  <!-- /PIERWSZA KARTA -->
+
+  <!-- DRUGA KARTA -->
+  <div id="mainPageCard_2" class="card mainPageCards  w-25 h-auto">
+    <div class="bg-image hover-overlay" data-mdb-ripple-color="light">
+      <img src="img/droga-mleczna-artykul.png" class="img-fluid" />
+    </div>
+    <div class="card-body ">
+      <h5 class="card-title">Tytuł artykułu</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <span class="card_link"><a href="#">PRZEJDŹ DO ARTYKUŁU</a></span>
+    </div>
+  </div>
+  <!-- /DRUGA KARTA -->
+
+  <!-- TRZECIA KARTA -->
+  <div id="mainPageCard_3" class="card mainPageCards  w-25 h-auto">
+    <div class="bg-image hover-overlay" data-mdb-ripple-color="light">
+      <img src="img/ludzkosc-w-kosmosie.png" class="img-fluid" />
+    </div>
+    <div class="card-body ">
+      <h5 class="card-title">Tytuł artykułu</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <span class="card_link"><a href="#">PRZEJDŹ DO ARTYKUŁU</a></span>
+    </div>
+  </div>
+  <!-- /TRZECIA KARTA -->
+
+
+
+
+  <div style="height:200px;"></div>
+
+  <!-- STOPKA -->
+
+  <footer id="footer" class="text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
+            class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
+            class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i
+            class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+            class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i
+            class="fab fa-linkedin-in"></i></a>
+        <!-- Github -->
+        <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i
+            class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div id="dolnaCzescStopki" class="text-center p-3">
+      © 2023 Copyright:
+      <a class="text-white" href="#">GwiezdneHoryzonty.com/copyrights</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+  <!-- /STOPKA -->
+  <!-- End your project here-->
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Nasze skrypty -->
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
 </html>
